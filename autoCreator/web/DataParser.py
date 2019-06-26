@@ -1,10 +1,6 @@
 """
-Overview:
-DataParser.py gets divided words list from given input.
-this uses Yahoo Developers API which divide sentences into words and shows what kind of words they are.
-This outputs keywords in given sentences which are correspond to main keywords such as group name.
+これはinputされたファイルから自動で団体ページを作成するプログラムです。これがあると作業効率爆上がり
 
-@usage DataParser.py -input "data.csv"
 @license MIT
 @author Manato1fg
 """
