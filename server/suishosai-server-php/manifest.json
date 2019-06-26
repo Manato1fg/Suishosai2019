@@ -1,0 +1,30 @@
+{
+    "name": "Suishosai Homepage",
+    "short_name": "翠翔祭",
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#fff",
+    "theme_color": "#B0F9FF",
+    "description": "翠翔祭公式ホームページのPWA",
+    "dir": "ltr",
+    "lang": "ja-JP",
+    "icons": [
+        {
+            "src": "/images/icon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/images/icon1024.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
+        }
+    ]
+}

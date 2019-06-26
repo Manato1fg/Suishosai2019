@@ -1,0 +1,12 @@
+{
+    "name": "manato/suishosai-server-php",
+    "authors": [
+        {
+            "name": "Manato1fg",
+            "email": "manato1fg@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-gd": "*"
+    }
+}
