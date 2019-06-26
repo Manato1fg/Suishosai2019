@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>投票ページ |【公式】翠翔祭2019</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/concierge.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Voyage</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="event.html">企画</a></li>
+                <li><a href="timetable.html">タイムテーブル</a></li>
+                <li><a href="notification.html">お知らせ</a></li>
+                <li><a href="access.html">アクセス</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://twitter.com/suishosai0123" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/suishousai2019" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Post -->
+            <div class="yokoku">
+                <p id="resultMessage"></p>
+                <button><a href="https://suishosai.netlify.com">トップページに戻る</a></button>
+            </div>
+            <style>
+                .yokoku {
+                    text-align: center;
+                }
+
+                .yokoku:last-child {
+                    padding: 4rem 4rem 2rem 4rem;
+                }
+
+                #resultMessage {
+                    text-align: center;
+                }
+            </style>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>ADDRESS</h3>
+                    <p>〒221-0854 神奈川県横浜市神奈川区三ツ沢南町1-1<br />
+                        神奈川県立横浜翠嵐高等学校</p>
+                </section>
+                <section>
+                    <h3>TEL</h3>
+                    <p>045-311-4621(代表)</p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p>翠翔祭2019実行委員会【公式】<br />
+                        suisyousai2019@gmail.com</p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/suishosai0123" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.instagram.com/suishousai2019" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+        <section>
+            <div id="copyright">
+                <ul>
+                    <li>&copy; Yokohama Suiran High School All Rights Reserved.</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+    <script src="assets/js/component.1.js"></script>
+    <script>
+        var names = ["ステージ発表部門", "調理食販部門", "娯楽・展示部門", "看板部門", "総合部門"];
+        var pair = {
+            "A-1": "鶏林 ～マジチキオオバヤシ～",
+            "A-2": "しげみうどん",
+            "A-3": "やきそばうゑた屋",
+            "A-4": "シャカぐちポテト",
+            "A-5": "ステーキ丼だけ～",
+            "A-6": "いっちゃん総本店",
+            "A-7": "格子点の個数を求めなさい",
+            "B-1": "SUIRAN BUCKS",
+            "B-2": "おじゃわ teaCHA",
+            "B-3": "CATS",
+            "B-4": "ブルゥ　スィール",
+            "B-5": "Me too eat CHURROS",
+            "B-6": "ポップコーンモンスター",
+            "B-7": "茶道部",
+            "B-8": "翠嵐万十博物館",
+            "C-1": "Art club",
+            "C-2": "【新コーナー】 シメキリリッリ",
+            "E-1": "CANDY  A☆GO☆RO！",
+            "E-3": "吉吉神社",
+            "E-4": "ゴキげんよう",
+            "E-5": "菜摘王の称号を目指せ！",
+            "E-6": "隠密",
+            "E-7": "令和でパイ投げつれーわ",
+            "E-8": "神社　オブ　テラー",
+            "F-1": "VSi嵐",
+            "F-2": "ハウルのめっちゃ動く的",
+            "F-3": "投げ処　TAKASHI",
+            "F-4": "文芸部が部誌を無料で配布するよ",
+            "F-5": "シンジて撃て！",
+            "F-6": "補講なんてほっとこう",
+            "F-7": "IMPOSSIBLE",
+            "F-8": "招待試合",
+            "F-9": "なんで、私が クイ研に!?",
+            "F-10": "パシられ隊",
+            "F-11": "棋道部",
+            "F-12": "ストラックアウト",
+            "F-13": "招待試合",
+            "F-14": "翠嵐かるた会",
+            "F-15": "MOGURAS, INC.",
+            "F-16": "ミリオンGo！",
+            "F-17": "迷探偵コナソ",
+            "F-18": "GAME CENTER OPEN",
+            "F-19": "鉄道研究同好会",
+            "F-20": "Pirates ・ of ・ けいちゃん",
+            "F-21": "翠和会",
+            "G-1": "CATASＴROPHE -呪われた鉱山-",
+            "H-1": "Change the World～科学部～",
+            "H-2": "トラッシュバスターず",
+            "H-3": "書道部",
+            "H-4": "国際交流委員会",
+            "H-5": "数学研究部",
+            "H-6": "IT研究部",
+            "H-7": "保健委員会",
+            "H-8": "写真部",
+            "I-1": "放送委員会映像班",
+            "I-2": "ふしぎな短編演劇",
+            "J-1": "ポピュラーソング部",
+            "K-1": "Clear Cider",
+            "K-2": "箪笥",
+            "K-3": "スマルト",
+            "K-4": "さけいくら",
+            "K-5": "Vegetable's",
+            "K-6": "圧倒的庶民派",
+            "K-7": "MINT BLUE",
+            "K-8": "裏Ms.翠嵐",
+            "K-9": "すぱげてぃ",
+            "K-10": "オパビニアの子孫",
+            "K-11": "Ms.&Mr. 翠嵐",
+            "K-12": "プリティダンスバトル",
+            "L-2": "サッカー部",
+            "L-3": "朝鮮中高級学校",
+            "L-4": "YSDC ~嵐踊者~",
+            "L-5": "スイラン！ブラバン！ビックバン！！",
+            "L-6": "Suiran String Orchestra 2019",
+            "L-7": "フーチコイワカ",
+            "L-8": "天使のいる音楽会",
+            "T-1": "やきそば",
+            "T-2": "鳥市民",
+            "T-3": "フランクフルト",
+            "T-4": "たこせん",
+            "T-5": "定時制多文化共生委員会",
+            "U-1": "定時制演劇部『ユダ』",
+            "U-2": "定時制保健委員会",
+            "U-3": "定時制イラスト・デザイン部",
+            "U-4": "写真展",
+            "U-5": "Spiral road",
+            "U-6": "定時制合唱部青空コンサート",
+            "O-1": "案内所"
+        }
+        var res = getQueryString();
+        if (res["org"] !== undefined && res["type"] !== undefined) {
+            var org = res["org"].split("\"").join("").replace("_", "-");
+            
+            var name = pair[org];
+            if(res["QR"] === undefined){
+                if(confirm("本当に"+names[res["type"]]+"で"+name+"に投票してもよろしいですか?(OKを押すと投票されます)")){
+                    _vo(res);
+                }else{
+                    location.href = "https://suishosai.netlify.com/events/"+ org.replace("-", "")+".html";
+                }
+            }else{
+                _vo(res);
+            }
+            
+        } else {
+            document.getElementById("resultMessage").textContent = "不正なパラメータが付与されました";
+        }
+
+        function post(org, type) {
+            postData(
+                "https://suishosai-server-php.herokuapp.com/redirect1.php",
+                createVoteRequestUrl(org, type),
+                function (e) {
+                    var status = e.target.status;
+                    var readyState = e.target.readyState;
+                    var response = e.target.responseText;
+                    if (status === 200 && readyState === 4) {
+                        document.getElementById("resultMessage").textContent = response;
+                    }
+                }
+            )
+        }
+
+        function _vo(res){
+            if (getUserID() !== null) {
+                post(res["org"], res["type"]);
+            } else {
+                A(function () {
+                    post(res["org"], res["type"]);
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

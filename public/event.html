@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>企画 |【公式】翠翔祭2019</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Voyage</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">TOP</a></li>
+				<li class="active"><a href="event.html">企画</a></li>
+				<li><a href="timetable.html">タイムテーブル</a></li>
+				<li><a href="notification.html">お知らせ</a></li>
+				<li><a href="access.html">アクセス</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://twitter.com/suishosai0123" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.instagram.com/suishousai2019" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<style>
+				h2 {
+					text-align: center;
+				}
+			</style>
+			<div>
+				<label class="search">
+					<div class="kensaku-margin">
+						<div class="one">
+							<div class="two">
+								<div class="three">
+									<input id="search-input" type="search" class="four" placeholder="検索ワード 例: ２階" oninput="onInputChange()" />
+								</div>
+								<div class="stick"></div>
+							</div>
+						</div>
+					</div>
+				</label>
+				<div class="keyword-margin">
+					<h3>おすすめキーワード</h3>
+					<h4>
+						<a onclick="recommend('AT')">調理</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('B')">食販</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('C')">物品販売</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('E')">有料娯楽</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('F')">無料娯楽</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('G')">迷路・お化け屋敷</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('H')">展示</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('I')">演劇</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('J')">音楽</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('K')">藤棚</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('L')">体育館ステージ</a>&nbsp;&verbar;&nbsp;
+						<a onclick="recommend('TU')">定時</a>
+					</h4>
+					<div style="text-align: center;"><button style="position: relative; right:10px;" onclick="zoom(-1)">縮小<i class="fa fa-search-minus"></i></button><button style="position: relative; left:10px;" onclick="zoom(1)">拡大<i class="fa fa-search-plus"></i></button></div>
+				</div>
+			</div>
+			<style>
+				.kensaku-margin {
+					margin: auto;
+				}
+
+				.keyword-margin {
+					margin: 20px;
+				}
+			</style>
+			<div class="box alt">
+				<h2>企画一覧</h2>
+				<div class="row gtr-50 gtr-uniform" id="items">
+					<div class="col-4 org-item" data-org="A-1"><span class="image fit"><a href="events/A1.html"><img src="images/small/A-1.png" class="eventhover lazyestload" alt="鶏林 ～マジチキオオバヤシ～" data-src="images/middle/A-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="A-2"><span class="image fit"><a href="events/A2.html"><img src="images/small/A-2.png" class="eventhover lazyestload" alt="繁実うどん" data-src="images/middle/A-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="A-3"><span class="image fit"><a href="events/A3.html"><img src="images/small/A-3.png" class="eventhover lazyestload" alt="やきそばうゑた屋" data-src="images/middle/A-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="A-4"><span class="image fit"><a href="events/A4.html"><img src="images/small/A-4.png" class="eventhover lazyestload" alt="シャカぐちポテト" data-src="images/middle/A-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="A-5"><span class="image fit"><a href="events/A5.html"><img src="images/small/A-5.png" class="eventhover lazyestload" alt="ステーキ丼だけ～" data-src="images/middle/A-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="A-6"><span class="image fit"><a href="events/A6.html"><img src="images/small/A-6.png" class="eventhover lazyestload" alt="いっちゃん総本店" data-src="images/middle/A-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="A-7"><span class="image fit"><a href="events/A7.html"><img src="images/small/A-7.png" class="eventhover lazyestload" alt="格子点の個数を求めなさい" data-src="images/middle/A-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-1"><span class="image fit"><a href="events/B1.html"><img src="images/small/B-1.png" class="eventhover lazyestload" alt="SUIRAN BUCKS" data-src="images/middle/B-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-2"><span class="image fit"><a href="events/B2.html"><img src="images/small/B-2.png" class="eventhover lazyestload" alt="おじゃわ teaCHA" data-src="images/middle/B-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-3"><span class="image fit"><a href="events/B3.html"><img src="images/small/B-3.png" class="eventhover lazyestload" alt="CATS" data-src="images/middle/B-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-4"><span class="image fit"><a href="events/B4.html"><img src="images/small/B-4.png" class="eventhover lazyestload" alt="ブルゥ　スィール" data-src="images/middle/B-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-5"><span class="image fit"><a href="events/B5.html"><img src="images/small/B-5.png" class="eventhover lazyestload" alt="Me too eat CHURROS" data-src="images/middle/B-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-6"><span class="image fit"><a href="events/B6.html"><img src="images/small/B-6.png" class="eventhover lazyestload" alt="ポップコーンモンスター" data-src="images/middle/B-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-7"><span class="image fit"><a href="events/B7.html"><img src="images/small/B-7.png" class="eventhover lazyestload" alt="茶道部" data-src="images/middle/B-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="B-8"><span class="image fit"><a href="events/B8.html"><img src="images/small/B-8.png" class="eventhover lazyestload" alt="翠嵐万十博物館" data-src="images/middle/B-8.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="C-1"><span class="image fit"><a href="events/C1.html"><img src="images/small/C-1.png" class="eventhover lazyestload" alt="Art club" data-src="images/middle/C-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="C-2"><span class="image fit"><a href="events/C2.html"><img src="images/small/C-2.png" class="eventhover lazyestload" alt="【新コーナー】 シメキリリッリ" data-src="images/middle/C-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-1"><span class="image fit"><a href="events/E1.html"><img src="images/small/E-1.png" class="eventhover lazyestload" alt="CANDY  A☆GO☆RO！" data-src="images/middle/E-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-3"><span class="image fit"><a href="events/E3.html"><img src="images/small/E-3.png" class="eventhover lazyestload" alt="吉吉神社" data-src="images/middle/E-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-4"><span class="image fit"><a href="events/E4.html"><img src="images/small/E-4.png" class="eventhover lazyestload" alt="ゴキげんよう" data-src="images/middle/E-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-5"><span class="image fit"><a href="events/E5.html"><img src="images/small/E-5.png" class="eventhover lazyestload" alt="菜摘王の称号を目指せ！" data-src="images/middle/E-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-6"><span class="image fit"><a href="events/E6.html"><img src="images/small/E-6.png" class="eventhover lazyestload" alt="隠密" data-src="images/middle/E-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-7"><span class="image fit"><a href="events/E7.html"><img src="images/small/E-7.png" class="eventhover lazyestload" alt="令和でパイ投げつれーわ" data-src="images/middle/E-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="E-8"><span class="image fit"><a href="events/E8.html"><img src="images/small/E-8.png" class="eventhover lazyestload" alt="神社　オブ　テラー" data-src="images/middle/E-8.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-1"><span class="image fit"><a href="events/F1.html"><img src="images/small/F-1.png" class="eventhover lazyestload" alt="VSi嵐" data-src="images/middle/F-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-2"><span class="image fit"><a href="events/F2.html"><img src="images/small/F-2.png" class="eventhover lazyestload" alt="ハウルのめっちゃ動く的" data-src="images/middle/F-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-3"><span class="image fit"><a href="events/F3.html"><img src="images/small/F-3.png" class="eventhover lazyestload" alt="投げ処　TAKASHI" data-src="images/middle/F-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-4"><span class="image fit"><a href="events/F4.html"><img src="images/small/F-4.png" class="eventhover lazyestload" alt="文芸部が部誌を無料で配布するよ" data-src="images/middle/F-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-5"><span class="image fit"><a href="events/F5.html"><img src="images/small/F-5.png" class="eventhover lazyestload" alt="シンジて撃て！" data-src="images/middle/F-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-6"><span class="image fit"><a href="events/F6.html"><img src="images/small/F-6.png" class="eventhover lazyestload" alt="補講なんてほっとこう" data-src="images/middle/F-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-7"><span class="image fit"><a href="events/F7.html"><img src="images/small/F-7.png" class="eventhover lazyestload" alt="IMPOSSIBLE" data-src="images/middle/F-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-8"><span class="image fit"><a href="events/F8.html"><img src="images/small/F-8.png" class="eventhover lazyestload" alt="招待試合" data-src="images/middle/F-8.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-9"><span class="image fit"><a href="events/F9.html"><img src="images/small/F-9.png" class="eventhover lazyestload" alt="なんで、私が クイ研に!?" data-src="images/middle/F-9.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-10"><span class="image fit"><a href="events/F10.html"><img src="images/small/F-10.png" class="eventhover lazyestload" alt="パシられ隊" data-src="images/middle/F-10.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-11"><span class="image fit"><a href="events/F11.html"><img src="images/small/F-11.png" class="eventhover lazyestload" alt="棋道部" data-src="images/middle/F-11.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-12"><span class="image fit"><a href="events/F12.html"><img src="images/small/F-12.png" class="eventhover lazyestload" alt="ストラックアウト" data-src="images/middle/F-12.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-13"><span class="image fit"><a href="events/F13.html"><img src="images/small/F-13.png" class="eventhover lazyestload" alt="招待試合" data-src="images/middle/F-13.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-14"><span class="image fit"><a href="events/F14.html"><img src="images/small/F-14.png" class="eventhover lazyestload" alt="翠嵐かるた会" data-src="images/middle/F-14.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-15"><span class="image fit"><a href="events/F15.html"><img src="images/small/F-15.png" class="eventhover lazyestload" alt="MOGURAS, INC." data-src="images/middle/F-15.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-16"><span class="image fit"><a href="events/F16.html"><img src="images/small/F-16.png" class="eventhover lazyestload" alt="ミリオンGo！" data-src="images/middle/F-16.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-17"><span class="image fit"><a href="events/F17.html"><img src="images/small/F-17.png" class="eventhover lazyestload" alt="迷探偵コナソ" data-src="images/middle/F-17.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-18"><span class="image fit"><a href="events/F18.html"><img src="images/small/F-18.png" class="eventhover lazyestload" alt="GAME CENTER OPEN" data-src="images/middle/F-18.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-19"><span class="image fit"><a href="events/F19.html"><img src="images/small/F-19.png" class="eventhover lazyestload" alt="鉄道研究同好会" data-src="images/middle/F-19.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-20"><span class="image fit"><a href="events/F20.html"><img src="images/small/F-20.png" class="eventhover lazyestload" alt="Pirates ・ of ・ けいちゃん" data-src="images/middle/F-20.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="F-21"><span class="image fit"><a href="events/F21.html"><img src="images/small/F-21.png" class="eventhover lazyestload" alt="翠和会" data-src="images/middle/F-21.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="G-1"><span class="image fit"><a href="events/G1.html"><img src="images/small/G-1.png" class="eventhover lazyestload" alt="CATASＴROPHE -呪われた鉱山-" data-src="images/middle/G-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-1"><span class="image fit"><a href="events/H1.html"><img src="images/small/H-1.png" class="eventhover lazyestload" alt="Change the World～科学部～" data-src="images/middle/H-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-2"><span class="image fit"><a href="events/H2.html"><img src="images/small/H-2.png" class="eventhover lazyestload" alt="トラッシュバスターず" data-src="images/middle/H-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-3"><span class="image fit"><a href="events/H3.html"><img src="images/small/H-3.png" class="eventhover lazyestload" alt="書道部" data-src="images/middle/H-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-4"><span class="image fit"><a href="events/H4.html"><img src="images/small/H-4.png" class="eventhover lazyestload" alt="国際交流委員会" data-src="images/middle/H-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-5"><span class="image fit"><a href="events/H5.html"><img src="images/small/H-5.png" class="eventhover lazyestload" alt="数学研究部" data-src="images/middle/H-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-6"><span class="image fit"><a href="events/H6.html"><img src="images/small/H-6.png" class="eventhover lazyestload" alt="IT研究部" data-src="images/middle/H-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-7"><span class="image fit"><a href="events/H7.html"><img src="images/small/H-7.png" class="eventhover lazyestload" alt="保健委員会" data-src="images/middle/H-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="H-8"><span class="image fit"><a href="events/H8.html"><img src="images/small/H-8.png" class="eventhover lazyestload" alt="写真部" data-src="images/middle/H-8.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="I-1"><span class="image fit"><a href="events/I1.html"><img src="images/small/I-1.png" class="eventhover lazyestload" alt="放送委員会映像班" data-src="images/middle/I-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="I-2"><span class="image fit"><a href="events/I2.html"><img src="images/small/I-2.png" class="eventhover lazyestload" alt="ふしぎな短編演劇" data-src="images/middle/I-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="J-1"><span class="image fit"><a href="events/J1.html"><img src="images/small/J-1.png" class="eventhover lazyestload" alt="ポピュラーソング部" data-src="images/middle/J-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-1"><span class="image fit"><a href="events/K1.html"><img src="images/small/K-1.png" class="eventhover lazyestload" alt="Clear Cider" data-src="images/middle/K-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-2"><span class="image fit"><a href="events/K2.html"><img src="images/small/K-2.png" class="eventhover lazyestload" alt="箪笥" data-src="images/middle/K-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-3"><span class="image fit"><a href="events/K3.html"><img src="images/small/K-3.png" class="eventhover lazyestload" alt="スマルト" data-src="images/middle/K-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-4"><span class="image fit"><a href="events/K4.html"><img src="images/small/K-4.png" class="eventhover lazyestload" alt="さけいくら" data-src="images/middle/K-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-5"><span class="image fit"><a href="events/K5.html"><img src="images/small/K-5.png" class="eventhover lazyestload" alt="Vegetable's" data-src="images/middle/K-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-6"><span class="image fit"><a href="events/K6.html"><img src="images/small/K-6.png" class="eventhover lazyestload" alt="圧倒的庶民派" data-src="images/middle/K-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-7"><span class="image fit"><a href="events/K7.html"><img src="images/small/K-7.png" class="eventhover lazyestload" alt="MINT BLUE" data-src="images/middle/K-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-8"><span class="image fit"><a href="events/K8.html"><img src="images/small/K-8.png" class="eventhover lazyestload" alt="裏Ms.翠嵐" data-src="images/middle/K-8.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-9"><span class="image fit"><a href="events/K9.html"><img src="images/small/K-9.png" class="eventhover lazyestload" alt="すぱげてぃ" data-src="images/middle/K-9.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-10"><span class="image fit"><a href="events/K10.html"><img src="images/small/K-10.png" class="eventhover lazyestload" alt="オパビニアの子孫" data-src="images/middle/K-10.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-11"><span class="image fit"><a href="events/K11.html"><img src="images/small/K-11.png" class="eventhover lazyestload" alt="Ms.&Mr. 翠嵐" data-src="images/middle/K-11.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="K-12"><span class="image fit"><a href="events/K12.html"><img src="images/small/K-12.png" class="eventhover lazyestload" alt="プリティダンスバトル" data-src="images/middle/K-12.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-2"><span class="image fit"><a href="events/L2.html"><img src="images/small/L-2.png" class="eventhover lazyestload" alt="サッカー部" data-src="images/middle/L-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-3"><span class="image fit"><a href="events/L3.html"><img src="images/small/L-3.png" class="eventhover lazyestload" alt="朝鮮中高級学校" data-src="images/middle/L-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-4"><span class="image fit"><a href="events/L4.html"><img src="images/small/L-4.png" class="eventhover lazyestload" alt="YSDC ~嵐踊者~" data-src="images/middle/L-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-5"><span class="image fit"><a href="events/L5.html"><img src="images/small/L-5.png" class="eventhover lazyestload" alt="スイラン！ブラバン！ビックバン！！" data-src="images/middle/L-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-6"><span class="image fit"><a href="events/L6.html"><img src="images/small/L-6.png" class="eventhover lazyestload" alt="Suiran String Orchestra 2019" data-src="images/middle/L-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-7"><span class="image fit"><a href="events/L7.html"><img src="images/small/L-7.png" class="eventhover lazyestload" alt="フーチコイワカ" data-src="images/middle/L-7.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="L-8"><span class="image fit"><a href="events/L8.html"><img src="images/small/L-8.png" class="eventhover lazyestload" alt="天使のいる音楽会" data-src="images/middle/L-8.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="T-1"><span class="image fit"><a href="events/T1.html"><img src="images/small/T-1.png" class="eventhover lazyestload" alt="やきそば" data-src="images/middle/T-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="T-2"><span class="image fit"><a href="events/T2.html"><img src="images/small/T-2.png" class="eventhover lazyestload" alt="鳥市民" data-src="images/middle/T-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="T-3"><span class="image fit"><a href="events/T3.html"><img src="images/small/T-3.png" class="eventhover lazyestload" alt="フランクフルト" data-src="images/middle/T-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="T-4"><span class="image fit"><a href="events/T4.html"><img src="images/small/T-4.png" class="eventhover lazyestload" alt="たこせん" data-src="images/middle/T-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="T-5"><span class="image fit"><a href="events/T5.html"><img src="images/small/T-5.png" class="eventhover lazyestload" alt="定時制多文化共生委員会" data-src="images/middle/T-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="U-1"><span class="image fit"><a href="events/U1.html"><img src="images/small/U-1.png" class="eventhover lazyestload" alt="定時制演劇部『ユダ』" data-src="images/middle/U-1.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="U-2"><span class="image fit"><a href="events/U2.html"><img src="images/small/U-2.png" class="eventhover lazyestload" alt="定時制保健委員会" data-src="images/middle/U-2.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="U-3"><span class="image fit"><a href="events/U3.html"><img src="images/small/U-3.png" class="eventhover lazyestload" alt="定時制イラスト・デザイン部" data-src="images/middle/U-3.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="U-4"><span class="image fit"><a href="events/U4.html"><img src="images/small/U-4.png" class="eventhover lazyestload" alt="写真展" data-src="images/middle/U-4.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="U-5"><span class="image fit"><a href="events/U5.html"><img src="images/small/U-5.png" class="eventhover lazyestload" alt="Spiral road" data-src="images/middle/U-5.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="U-6"><span class="image fit"><a href="events/U6.html"><img src="images/small/U-6.png" class="eventhover lazyestload" alt="定時制合唱部青空コンサート" data-src="images/middle/U-6.png" /></a></span></div>
+					<div class="col-4 org-item" data-org="O-1"><span class="image fit"><a href="events/O1.html"><img src="images/small/O-1.png" class="eventhover lazyestload" alt="案内所" data-src="images/middle/O-1.png" /></a></span></div>
+					<p style="text-align: center;" id="empty" class="hide">条件に一致する結果はありませんでした。キーワードを変えて再度お試しください。</p>
+				</div>
+			</div>
+			<style>
+				.eventhover {
+					transition: 1.0s;
+				}
+
+				.eventhover:hover {
+					opacity: 0.5;
+				}
+			</style>
+			<!-- Footer -->
+
+			</l>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>ADDRESS</h3>
+						<p>〒221-0854 神奈川県横浜市神奈川区三ツ沢南町1-1<br />
+							神奈川県立横浜翠嵐高等学校</p>
+					</section>
+					<section>
+						<h3>TEL</h3>
+						<p>045-311-4621(代表)</p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p>翠翔祭2019実行委員会【公式】<br />
+						suisyousai2019@gmail.com</p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://twitter.com/suishosai0123" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/suishousai2019" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul>
+					<li>&copy; Yokohama Suiran High School All Rights Reserved.</li>
+					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="./assets/js/lazyestload.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+		<script src="./assets/js/component.js"></script>
+		<script>
+			document.querySelector('.stick').addEventListener('click', () => {
+				document.querySelector('.four').value = '';
+			});
+		</script>
+		<script src="./assets/js/search.js"></script>
+		<script>
+			//document.getElementById("search-input").value = "";
+			onInputChange()
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142064335-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-142064335-1');
+		</script>
+
+</body>
+</html>

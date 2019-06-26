@@ -1,0 +1,251 @@
+#concierge-button{
+    background: #F7E416;
+    height: 64px;
+    border-radius: 32px;
+    width: 230px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 1000;
+}
+
+#concierge-button img{
+    width: 64px;
+    height: 64px;
+}
+
+#concierge-button span{
+    width: 160px;
+    height: 50px;
+    background: white;
+    font-size: 1em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
+    position: absolute;
+    border-radius: 25px;
+    top: 50%;
+    left: calc(58% + 10px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+#concierge-button span::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid white;
+  -ms-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+@media screen and (max-width: 480px){
+  #concierge-button{
+    right: 5px;
+  }
+}
+
+#concierge-chat-box{
+    position: fixed;
+    width: 400px;
+    height: 70%;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0px 0px 6px 3px #8fa3b7;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 480px){
+    #concierge-chat-box{
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.concierge-chat{
+    position: relative;
+    height: 70%;
+    max-height: calc(80vh - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.concierge-input{
+    position: relative;
+    height: 30%;
+    min-height: 120px;
+    background: blue;
+    border-top: 1px solid #aaa;
+    background: #eee;
+}
+
+/**
+LINE stamp
+*/
+
+/*以下、①背景色など*/
+.line-bc {
+  padding: 0;
+  max-width: 450px;
+  text-align: right;
+  font-size: 14px;
+  background: #fff;
+
+}
+
+/*以下、②左側のコメント*/
+.balloon6 {
+  width: 100%;
+  margin: 10px 10px;
+  overflow: hidden;
+  
+}
+
+.balloon6 .faceicon {
+  float: left;
+  margin-right: -30px;
+  width: 40px;
+}
+
+.balloon6 .faceicon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  background: #F7E416;/*これをいじりな！！！*/
+  margin: 5px;
+}
+.balloon6 .chatting {
+  width: 100%;
+  text-align: left;
+}
+.says {
+  display: inline-block;
+  line-height: 23px;
+  position: relative;
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 60%;
+  border-radius: 12px;
+  background: #edf1ee;
+  word-wrap: break-word;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-name: fadeInSlide;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -ms-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+  margin: 10px 0;
+}
+.mycomment p {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 70%;
+  border-radius: 12px;
+  background: #30e852;
+  font-size: 15px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -ms-transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+#concierge-input{
+    resize: none;
+    width: calc(100%);
+    height: calc(80%);
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.3em;
+    z-index: 1000;
+}
+
+
+#concierge-question-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+
+#concierge-send-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+@media screen and (min-width: 480px){
+    #concierge-send-icon{
+        display: hidden;
+    }
+
+    .mycomment p{
+        max-width: 250px;
+    }
+
+    .says {
+        max-width: 250px;
+    }
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 0;
+    height: 6em;
+    transform: translateX(-20px);
+    visibility: visible !important;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+    visibility: visible !important;
+  }
+}

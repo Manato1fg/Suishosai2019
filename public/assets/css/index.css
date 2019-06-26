@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'TIMEFONT';
+    src: url('../fonts/candle.otf')  format('truetype');
+}
+
+.timecounter{
+   margin: 0 auto !important;
+   text-align: center !important;
+}
+
+.counter{
+    display: inline-block !important;
+    max-width: 100px !important;
+    width: 20% !important;
+    min-width: 60px !important;
+    text-align: center !important;
+}
+
+.counter .variable{
+    font-family: 'TIMEFONT' !important;
+    color: #012F82 !important;
+    font-size: 350% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.counter .sub{
+    color: #012F82 !important;
+    text-align: right !important;
+    margin: 5px !important;
+    font-family: 'TIMEFONT';
+}
+
